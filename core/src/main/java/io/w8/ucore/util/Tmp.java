@@ -1,4 +1,4 @@
-package io.anuke.ucore.util;
+package io.w8.ucore.util;
 
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;

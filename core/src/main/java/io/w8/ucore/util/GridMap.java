@@ -1,4 +1,4 @@
-package io.anuke.ucore.util;
+package io.w8.ucore.util;
 
 import java.util.Collection;
 import java.util.HashMap;

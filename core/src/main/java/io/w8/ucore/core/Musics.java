@@ -1,4 +1,4 @@
-package io.anuke.ucore.core;
+package io.w8.ucore.core;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.audio.Music;
@@ -6,7 +6,7 @@ import com.badlogic.gdx.audio.Music.OnCompletionListener;
 import com.badlogic.gdx.utils.Array;
 import com.badlogic.gdx.utils.ObjectMap;
 
-import io.anuke.ucore.util.Mathf;
+import io.w8.ucore.util.Mathf;
 
 public class Musics{
 	private static Array<Music> music = new Array<>();

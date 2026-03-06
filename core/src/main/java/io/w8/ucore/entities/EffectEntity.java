@@ -1,9 +1,9 @@
-package io.anuke.ucore.entities;
+package io.w8.ucore.entities;
 
 import com.badlogic.gdx.graphics.Color;
 
-import io.anuke.ucore.core.Effects;
-import io.anuke.ucore.core.Effects.Effect;
+import io.w8.ucore.core.Effects;
+import io.w8.ucore.core.Effects.Effect;
 
 public class EffectEntity extends TimedEntity{
 	public Effect renderer;

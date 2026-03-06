@@ -1,4 +1,4 @@
-package io.anuke.ucore.noise;
+package io.w8.ucore.noise;
 
 //horribly butchered from libnoiseforjava, please ignore
 public class RidgedPerlin{

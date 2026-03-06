@@ -1,4 +1,4 @@
-package io.anuke.ucore.graphics;
+package io.w8.ucore.graphics;
 
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Colors;
@@ -10,12 +10,11 @@ import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.utils.Align;
 import com.badlogic.gdx.utils.NumberUtils;
 import com.badlogic.gdx.utils.Pools;
-import io.anuke.ucore.core.Core;
-import io.anuke.ucore.scene.style.Drawable;
-import io.anuke.ucore.util.Mathf;
-import io.anuke.ucore.util.Tmp;
+import io.w8.ucore.core.Core;
+import io.w8.ucore.util.Mathf;
+import io.w8.ucore.util.Tmp;
 
-import static io.anuke.ucore.core.Core.batch;
+import static io.w8.ucore.core.Core.batch;
 
 public class Draw{
 	private static Color[] carr = new Color[3];
@@ -24,13 +23,6 @@ public class Draw{
 		sprite.draw(batch);
 	}
 
-	public static void patch(String name, float x, float y, float width, float height){
-		getPatch(name).draw(batch, x, y, width, height);
-	}
-
-	public static Drawable getPatch(String name){
-		return Core.skin.getDrawable(name);
-	}
 
 	/** Sets the batch color to this color AND the previous alpha. */
 	public static void tint(Color color){

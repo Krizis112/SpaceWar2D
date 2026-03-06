@@ -1,4 +1,4 @@
-package io.anuke.ucore.modules;
+package io.w8.ucore.modules;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.files.FileHandle;
@@ -9,17 +9,17 @@ import com.badlogic.gdx.math.Interpolation;
 import com.badlogic.gdx.math.Vector3;
 import com.badlogic.gdx.utils.reflect.ClassReflection;
 import com.badlogic.gdx.utils.reflect.Method;
-import io.anuke.ucore.UCore;
-import io.anuke.ucore.core.Core;
-import io.anuke.ucore.core.Effects;
-import io.anuke.ucore.core.Graphics;
-import io.anuke.ucore.core.Settings;
-import io.anuke.ucore.graphics.Surface;
-import io.anuke.ucore.util.Mathf;
-import io.anuke.ucore.util.Tmp;
+import io.w8.ucore.UCore;
+import io.w8.ucore.core.Core;
+import io.w8.ucore.core.Effects;
+import io.w8.ucore.core.Graphics;
+import io.w8.ucore.core.Settings;
+import io.w8.ucore.graphics.Surface;
+import io.w8.ucore.util.Mathf;
+import io.w8.ucore.util.Tmp;
 
-import static io.anuke.ucore.core.Core.batch;
-import static io.anuke.ucore.core.Core.camera;
+import static io.w8.ucore.core.Core.batch;
+import static io.w8.ucore.core.Core.camera;
 
 public abstract class RendererModule extends Module{
 	public Color clearColor = Color.BLACK;

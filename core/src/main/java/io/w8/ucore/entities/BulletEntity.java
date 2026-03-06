@@ -1,10 +1,10 @@
-package io.anuke.ucore.entities;
+package io.w8.ucore.entities;
 
 import com.badlogic.gdx.math.Vector2;
 
-import io.anuke.ucore.core.Timers;
-import io.anuke.ucore.util.Mathf;
-import io.anuke.ucore.util.Scalable;
+import io.w8.ucore.core.Timers;
+import io.w8.ucore.util.Mathf;
+import io.w8.ucore.util.Scalable;
 
 public abstract class BulletEntity<T extends BaseBulletType> extends SolidEntity implements Damager, Scalable{
 	public T type;

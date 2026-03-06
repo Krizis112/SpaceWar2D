@@ -1,8 +1,8 @@
-package io.anuke.ucore.graphics;
+package io.w8.ucore.graphics;
 
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.math.MathUtils;
-import io.anuke.ucore.util.Mathf;
+import io.w8.ucore.util.Mathf;
 
 import static java.lang.Math.abs;
 

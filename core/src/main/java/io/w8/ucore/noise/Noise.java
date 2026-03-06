@@ -1,4 +1,4 @@
-package io.anuke.ucore.noise;
+package io.w8.ucore.noise;
 
 public final class Noise {
 
