@@ -1,4 +1,4 @@
-package io.anuke.ucore.core;
+package io.w8.ucore.core;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.InputAdapter;
@@ -10,11 +10,11 @@ import com.badlogic.gdx.controllers.Controllers;
 import com.badlogic.gdx.controllers.PovDirection;
 import com.badlogic.gdx.utils.Array;
 import com.badlogic.gdx.utils.IntSet;
-import io.anuke.ucore.core.KeyBinds.Section;
-import io.anuke.ucore.util.Input;
-import io.anuke.ucore.util.Input.Type;
-import io.anuke.ucore.util.Log;
-import io.anuke.ucore.util.OS;
+import io.w8.ucore.core.KeyBinds.Section;
+import io.w8.ucore.util.Input;
+import io.w8.ucore.util.Input.Type;
+import io.w8.ucore.util.Log;
+import io.w8.ucore.util.OS;
 
 public class Inputs{
 	private static boolean useControllers = true;

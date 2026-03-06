@@ -1,8 +1,8 @@
-package io.anuke.ucore.entities;
+package io.w8.ucore.entities;
 
 import com.badlogic.gdx.math.Vector2;
-import io.anuke.ucore.util.Mathf;
-import io.anuke.ucore.util.Position;
+import io.w8.ucore.util.Mathf;
+import io.w8.ucore.util.Position;
 
 public abstract class Entity implements Position{
 	private static int lastid;

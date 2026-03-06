@@ -1,6 +1,6 @@
-package io.anuke.ucore.function;
+package io.w8.ucore.function;
 
-import io.anuke.ucore.core.Effects.EffectContainer;
+import io.w8.ucore.core.Effects.EffectContainer;
 
 public interface EffectRenderer{
 	public void render(EffectContainer effect);

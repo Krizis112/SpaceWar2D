@@ -1,6 +1,6 @@
-package io.anuke.ucore.entities;
+package io.w8.ucore.entities;
 
-import io.anuke.ucore.util.Mathf;
+import io.w8.ucore.util.Mathf;
 
 public abstract class DestructibleEntity extends SolidEntity{
 	public transient float maxhealth;

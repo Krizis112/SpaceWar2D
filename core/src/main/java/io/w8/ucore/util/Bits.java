@@ -1,4 +1,4 @@
-package io.anuke.ucore.util;
+package io.w8.ucore.util;
 
 public class Bits{
 	static byte[] result = new byte[4];

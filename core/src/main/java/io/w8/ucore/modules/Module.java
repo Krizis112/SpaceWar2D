@@ -1,4 +1,4 @@
-package io.anuke.ucore.modules;
+package io.w8.ucore.modules;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.InputAdapter;

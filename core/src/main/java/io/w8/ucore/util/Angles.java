@@ -1,4 +1,4 @@
-package io.anuke.ucore.util;
+package io.w8.ucore.util;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.OrthographicCamera;
@@ -6,10 +6,10 @@ import com.badlogic.gdx.math.MathUtils;
 import com.badlogic.gdx.math.RandomXS128;
 import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.math.Vector3;
-import io.anuke.ucore.core.Core;
-import io.anuke.ucore.function.Consumer;
-import io.anuke.ucore.function.PositionConsumer;
-import io.anuke.ucore.function.PositionFractConsumer;
+import io.w8.ucore.core.Core;
+import io.w8.ucore.function.Consumer;
+import io.w8.ucore.function.PositionConsumer;
+import io.w8.ucore.function.PositionFractConsumer;
 
 public class Angles{
 	private static final RandomXS128 random = new RandomXS128();

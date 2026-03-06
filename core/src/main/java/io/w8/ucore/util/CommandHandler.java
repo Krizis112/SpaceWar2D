@@ -1,8 +1,8 @@
-package io.anuke.ucore.util;
+package io.w8.ucore.util;
 
 import com.badlogic.gdx.utils.Array;
 import com.badlogic.gdx.utils.ObjectMap;
-import io.anuke.ucore.function.Consumer;
+import io.w8.ucore.function.Consumer;
 
 public class CommandHandler{
 	private final ObjectMap<String, Command> commands = new ObjectMap<>();

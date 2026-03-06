@@ -1,10 +1,10 @@
-package io.anuke.ucore.core;
+package io.w8.ucore.core;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.audio.Sound;
 import com.badlogic.gdx.utils.ObjectMap;
 
-import io.anuke.ucore.util.Mathf;
+import io.w8.ucore.util.Mathf;
 
 public class Sounds{
 	private static ObjectMap<String, Sound> map = new ObjectMap<>();

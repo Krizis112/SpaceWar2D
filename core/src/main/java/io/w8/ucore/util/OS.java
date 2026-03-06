@@ -1,6 +1,6 @@
-package io.anuke.ucore.util;
+package io.w8.ucore.util;
 
-import io.anuke.ucore.UCore;
+import io.w8.ucore.UCore;
 
 public class OS {
     static public boolean isWindows = property("os.name").contains("Windows");

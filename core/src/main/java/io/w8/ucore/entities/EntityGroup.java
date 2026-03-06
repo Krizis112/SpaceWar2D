@@ -1,9 +1,9 @@
-package io.anuke.ucore.entities;
+package io.w8.ucore.entities;
 
 import com.badlogic.gdx.math.Rectangle;
 import com.badlogic.gdx.utils.Array;
 import com.badlogic.gdx.utils.IntMap;
-import io.anuke.ucore.util.QuadTree;
+import io.w8.ucore.util.QuadTree;
 
 import java.util.Iterator;
 

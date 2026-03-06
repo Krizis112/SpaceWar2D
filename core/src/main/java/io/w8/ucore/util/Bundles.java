@@ -1,6 +1,6 @@
-package io.anuke.ucore.util;
+package io.w8.ucore.util;
 
-import io.anuke.ucore.core.Core;
+import io.w8.ucore.core.Core;
 
 public class Bundles {
 

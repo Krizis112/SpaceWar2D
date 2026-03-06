@@ -1,8 +1,8 @@
-package io.anuke.ucore.entities;
+package io.w8.ucore.entities;
 
-import io.anuke.ucore.core.Timers;
-import io.anuke.ucore.util.Mathf;
-import io.anuke.ucore.util.Scalable;
+import io.w8.ucore.core.Timers;
+import io.w8.ucore.util.Mathf;
+import io.w8.ucore.util.Scalable;
 
 public abstract class TimedEntity extends Entity implements Scalable{
 	public float lifetime;

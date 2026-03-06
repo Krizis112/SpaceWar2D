@@ -1,16 +1,16 @@
-package io.anuke.ucore.core;
+package io.w8.ucore.core;
 
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.utils.Array;
-import io.anuke.ucore.entities.EffectEntity;
-import io.anuke.ucore.function.BiConsumer;
-import io.anuke.ucore.function.Consumer;
-import io.anuke.ucore.function.EffectProvider;
-import io.anuke.ucore.function.EffectRenderer;
-import io.anuke.ucore.util.Mathf;
-import io.anuke.ucore.util.Position;
-import io.anuke.ucore.util.Scalable;
+import io.w8.ucore.entities.EffectEntity;
+import io.w8.ucore.function.BiConsumer;
+import io.w8.ucore.function.Consumer;
+import io.w8.ucore.function.EffectProvider;
+import io.w8.ucore.function.EffectRenderer;
+import io.w8.ucore.util.Mathf;
+import io.w8.ucore.util.Position;
+import io.w8.ucore.util.Scalable;
 
 public class Effects{
 	private static Array<Effect> effects = new Array<>();

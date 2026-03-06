@@ -1,8 +1,8 @@
-package io.anuke.ucore.util;
+package io.w8.ucore.util;
 
 import com.badlogic.gdx.math.*;
 
-import io.anuke.ucore.function.TileCollider;
+import io.w8.ucore.function.TileCollider;
 
 public class Physics{
 	private final static Vector2 vector = new Vector2();

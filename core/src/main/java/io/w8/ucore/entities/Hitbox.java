@@ -1,4 +1,4 @@
-package io.anuke.ucore.entities;
+package io.w8.ucore.entities;
 
 import com.badlogic.gdx.math.Rectangle;
 

@@ -1,12 +1,12 @@
-package io.anuke.ucore.util;
+package io.w8.ucore.util;
 
 import java.util.Iterator;
 
 import com.badlogic.gdx.math.Rectangle;
 import com.badlogic.gdx.utils.Array;
 
-import io.anuke.ucore.function.BoundingBoxProvider;
-import io.anuke.ucore.function.Consumer;
+import io.w8.ucore.function.BoundingBoxProvider;
+import io.w8.ucore.function.Consumer;
 
 /**
  * A basic quad tree.

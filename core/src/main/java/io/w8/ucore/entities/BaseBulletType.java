@@ -1,9 +1,9 @@
-package io.anuke.ucore.entities;
+package io.w8.ucore.entities;
 
 import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.utils.Array;
-import io.anuke.ucore.core.Effects;
-import io.anuke.ucore.core.Effects.Effect;
+import io.w8.ucore.core.Effects;
+import io.w8.ucore.core.Effects.Effect;
 
 /**Presumably you would extends BulletType and put in the default bullet entity type.*/
 public abstract class BaseBulletType<T extends BulletEntity>{
