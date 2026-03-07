@@ -23,7 +23,7 @@ public class QuadTree<T> {
     private Rectangle bounds;
     private Array<T> objects;
 
-    private static Rectangle tmp = new Rectangle();
+    private final Rectangle tmp = new Rectangle();
     private BoundingBoxProvider<T> provider;
 
     private boolean leaf;
@@ -49,7 +49,7 @@ public class QuadTree<T> {
         });
     }
 
-    private QuadTree(int maxObjectsPerNode, int level, Rectangle bounds, BoundingBoxProvider provider) {
+    private QuadTree(int maxObjectsPerNode, int level, Rectangle bounds, BoundingBoxProvider<T> provider) {
         this.level = level;
         this.bounds = bounds;
         this.maxObjectsPerNode = maxObjectsPerNode;
@@ -185,6 +185,39 @@ public class QuadTree<T> {
 
         // Else, object needs to be in parent cause it can't fit completely in a quadrant
         return null;
+    }
+
+    /**
+     * Returns a human-readable tree dump useful for debugging subdivision behavior.
+     */
+    public String debugDump() {
+        StringBuilder builder = new StringBuilder(128);
+        appendDebug(builder, 0);
+        return builder.toString();
+    }
+
+    private void appendDebug(StringBuilder out, int depth) {
+        for (int i = 0; i < depth; i++) {
+            out.append("  ");
+        }
+
+        out.append("node(level=")
+                .append(level)
+                .append(", leaf=")
+                .append(leaf)
+                .append(", objects=")
+                .append(objects.size)
+                .append(", bounds=")
+                .append(bounds)
+                .append(')')
+                .append('\n');
+
+        if (!leaf) {
+            bottomLeftChild.appendDebug(out, depth + 1);
+            bottomRightChild.appendDebug(out, depth + 1);
+            topLeftChild.appendDebug(out, depth + 1);
+            topRightChild.appendDebug(out, depth + 1);
+        }
     }
 
     /**

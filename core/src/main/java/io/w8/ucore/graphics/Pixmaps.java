@@ -5,12 +5,11 @@ import com.badlogic.gdx.files.FileHandle;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Pixmap;
 import com.badlogic.gdx.graphics.Pixmap.Format;
+import com.badlogic.gdx.graphics.PixmapIO;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.Texture.TextureWrap;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.math.Vector2;
-import com.badlogic.gdx.utils.reflect.ClassReflection;
-import com.badlogic.gdx.utils.reflect.ReflectionException;
 import io.w8.ucore.UCore;
 
 import java.nio.Buffer;
@@ -173,13 +172,7 @@ public class Pixmaps{
 	
 	/**Platform-safe pixmapIO write.*/
 	public static void write(Pixmap pixmap, FileHandle file){
-		try{
-			ClassReflection.getMethod(ClassReflection.forName("com.badlogic.gdx.graphics.PixmapIO"), 
-					"writePNG", FileHandle.class, Pixmap.class)
-			.invoke(null, file, pixmap);
-		}catch(ReflectionException e){
-			throw new RuntimeException(e);
-		}
+		PixmapIO.writePNG(file, pixmap);
 	}
 
 	/** NOTE: REQUIRES BINDING THE TEXTURE FIRST! */

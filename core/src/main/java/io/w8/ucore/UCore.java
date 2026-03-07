@@ -4,13 +4,11 @@ import com.badlogic.gdx.Application.ApplicationType;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.files.FileHandle;
 import com.badlogic.gdx.utils.Logger;
-import com.badlogic.gdx.utils.reflect.ClassReflection;
-import com.badlogic.gdx.utils.reflect.Field;
-import com.badlogic.gdx.utils.reflect.Method;
-import com.badlogic.gdx.utils.reflect.ReflectionException;
 import io.w8.ucore.core.Timers;
 import io.w8.ucore.function.Callable;
 import io.w8.ucore.util.Log;
+
+import java.lang.reflect.Field;
 
 public class UCore{
 	private static Logger logger;
@@ -43,8 +41,7 @@ public class UCore{
 
 	public static String getProperty(String name){
 		try{
-			Method method = ClassReflection.getMethod(System.class, "getProperty", String.class);
-			return (String)method.invoke(null, name);
+			return System.getProperty(name);
 		}catch(Exception e){
 			return null;
 		}
@@ -56,42 +53,35 @@ public class UCore{
 	}
 
 	public static String getAbsolute(FileHandle file){
-		try{
-			Method method = ClassReflection.getMethod(file.getClass(), "file");
-			Object object = method.invoke(file);
-			Method fm = ClassReflection.getMethod(object.getClass(), "getAbsolutePath");
-			return (String)fm.invoke(object);
-		}catch(ReflectionException e){
-			throw new RuntimeException(e);
-		}
+		return file.file().getAbsolutePath();
 	}
 	
 	public static Object getPrivate(Object object, String name){
 		try{
-			Field field = ClassReflection.getDeclaredField(object.getClass(), name);
+			Field field = object.getClass().getDeclaredField(name);
 			field.setAccessible(true);
 			return field.get(object);
-		}catch(ReflectionException e){
+		}catch(ReflectiveOperationException e){
             throw new RuntimeException(e);
 		}
 	}
 
 	public static Object getPrivate(Class<?> type, Object object, String name){
 		try{
-			Field field = ClassReflection.getDeclaredField(type, name);
+			Field field = type.getDeclaredField(name);
 			field.setAccessible(true);
 			return field.get(object);
-		}catch(ReflectionException e){
+		}catch(ReflectiveOperationException e){
 			throw new RuntimeException(e);
 		}
 	}
 
 	public static void setPrivate(Object object, String name, Object value){
 		try{
-			Field field = ClassReflection.getDeclaredField(object.getClass(), name);
+			Field field = object.getClass().getDeclaredField(name);
 			field.setAccessible(true);
 			field.set(object, value);
-		}catch(ReflectionException e){
+		}catch(ReflectiveOperationException e){
 			throw new RuntimeException(e);
 		}
 	}
