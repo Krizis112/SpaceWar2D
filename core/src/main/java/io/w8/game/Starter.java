@@ -64,7 +64,7 @@ public class Starter extends ApplicationAdapter {
     }
 
     private void updateShip(float delta) {
-        float thrust = Gdx.input.isKeyPressed(Input.Keys.SHIFT_LEFT) ? 320f : 220f;
+        float thrust = Gdx.input.isKeyPressed(Input.Keys.SHIFT_LEFT) ? 1020f : 220f;
         if (Gdx.input.isKeyPressed(Input.Keys.W)) {
             shipVelocity.add(Angles.trnsx(shipRotation, thrust * delta), Angles.trnsy(shipRotation, thrust * delta));
         }

@@ -14,7 +14,6 @@ public class Inputs{
 	private static final InputMultiplexer plex = new InputMultiplexer();
 	private static int scroll = 0;
 	private static InputProcessor listen = new InputAdapter(){
-		@Override
 		public boolean scrolled(int amount){
 			scroll = -amount;
 			return false;

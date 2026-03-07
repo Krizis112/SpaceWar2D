@@ -2,6 +2,7 @@ package io.w8.ucore.util;
 
 import com.badlogic.gdx.Input;
 import com.badlogic.gdx.InputProcessor;
+import com.badlogic.gdx.input.NativeInputConfiguration;
 
 public class InputProxy implements Input{
     protected final Input input;
