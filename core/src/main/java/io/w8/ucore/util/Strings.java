@@ -1,6 +1,5 @@
 package io.w8.ucore.util;
 
-import com.badlogic.gdx.utils.reflect.ClassReflection;
 import io.w8.ucore.core.Timers;
 
 public class Strings{
@@ -16,7 +15,7 @@ public class Strings{
 			e = e.getCause();
 		}
 
-		String name = ClassReflection.getSimpleName(e.getClass()).replace("Exception", "");
+		String name = e.getClass().getSimpleName().replace("Exception", "");
 		
 		build.append(name);
 		if(e.getMessage() != null) {
