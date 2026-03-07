@@ -122,7 +122,7 @@ public class Starter extends ApplicationAdapter {
         float w = 48f;
         float h = 48f;
         batch.setColor(Color.WHITE);
-        batch.draw(image, shipPosition.x - w / 2f, shipPosition.y - h / 2f, w / 2f, h / 2f, w, h, 1f, 1f, shipRotation);
+        batch.draw(image, shipPosition.x - w / 2f, shipPosition.y - h / 2f, w / 2f, h / 2f, w, h, 1f, 1f, shipRotation, 0, 0, image.getWidth(), image.getHeight(), false, false);
     }
 
     private void drawProjectiles() {
