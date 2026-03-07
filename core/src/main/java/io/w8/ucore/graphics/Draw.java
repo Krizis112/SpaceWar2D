@@ -64,7 +64,7 @@ public class Draw{
 	}
 
 	public static void color(int color){
-		batch.setColor(NumberUtils.intBitsToFloat(color));
+		batch.setPackedColor(NumberUtils.intBitsToFloat(color));
 	}
 
 	public static void color(){

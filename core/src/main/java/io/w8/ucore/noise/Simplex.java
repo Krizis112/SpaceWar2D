@@ -62,6 +62,16 @@ public class Simplex{
 	    {2,1,0,3},{0,0,0,0},{0,0,0,0},{0,0,0,0},{3,1,0,2},{0,0,0,0},{3,2,0,1},{3,2,1,0}
 	};
 	
+
+	private static final Simplex shared = new Simplex();
+
+	public static float noise(float x, float y){
+		return (float)shared.raw_noise_2d(x, y);
+	}
+
+	public static float noise(double x, double y){
+		return (float)shared.raw_noise_2d(x, y);
+	}
 	public void setSeed(long seed){
 		Random random = new Random(seed);
 		
